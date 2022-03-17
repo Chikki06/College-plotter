@@ -4,11 +4,15 @@ import matplotlib
 import matplotlib.pyplot as plt
 import geopandas as gpd
 import plotly.express as px
+import pandas as pd
 file = open(r"C:\Users\hiidk\Projects\text scraping\info.txt","r+")
 lines = []
 lines = file.readlines()
 count = 0
 latlong = {}
+latlong["Names"] = []
+latlong["Latitude"] = []
+latlong["Longitude"] = []
 for x in range(1,122,3):
     name = lines[x]
 
@@ -26,4 +30,9 @@ for x in range(1,122,3):
     res = conn.getresponse()
     data = res.read()
     fin = json.loads(data)
-    latlong[f'{name[:-1]}'] = (fin['data'][0]['latitude'],fin['data'][0]['longitude'])
+    latlong["Names"].append(f'{name[:-1]}')
+    latlong["Latitude"].append(fin['data'][0]['latitude'])
+    latlong["Longitude"].append(fin['data'][0]['longitude'])
+print(latlong)
+# df = pd.DataFrame(list(latlong.items()),columns = ['Name','Latitude','Longitude'])
+# print(df.head())
