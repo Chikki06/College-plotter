@@ -1,0 +1,123 @@
+1
+Massachusetts Institute of Technology (MIT) United States
+93.7
+2
+Stanford University United States
+93.1
+3
+Carnegie Mellon University United States
+93
+5
+University of California, Berkeley (UCB) United States
+89.5
+7
+Harvard University United States
+88.2
+11
+University of Toronto Canada
+85.1
+14
+Princeton University United States
+83.7
+15
+University of Washington United States
+83.5
+17
+University of California, Los Angeles (UCLA) United States
+82.5
+18
+Columbia University United States
+82.1
+19
+Cornell University United States
+81.3
+21
+New York University (NYU) United States
+81.1
+22
+California Institute of Technology (Caltech) United States
+80.1
+23
+University of Waterloo Canada
+79.7
+25
+University of British Columbia Canada
+79.6
+28
+University of Texas at Austin United States
+78.6
+33
+University of Illinois at Urbana-Champaign United States
+77.4
+33
+University of Pennsylvania United States
+77.4
+35
+Yale University United States
+76.7
+38
+Georgia Institute of Technology United States
+76.6
+46
+University of Michigan-Ann Arbor United States
+75.3
+47
+University of Chicago United States
+75.1
+49
+McGill University Canada
+74.9
+52
+University of Southern California United States
+74.2
+53
+University of California, San Diego (UCSD) United States
+74.1
+54
+University of Maryland, College Park United States
+74
+61
+Montreal University Canada
+73.3
+69
+Purdue University United States
+71.4
+84
+University of North Carolina, Chapel Hill United States
+70.1
+87
+Duke University United States
+69.3
+87
+Johns Hopkins University United States
+69.3
+89
+University of Wisconsin-Madison United States
+69.2
+92
+Boston University United States
+68.9
+95
+University of Massachusetts Amherst United States
+68.6
+109
+University of Alberta Canada
+67.8
+111
+University of California, Irvine United States
+67.7
+117
+Pennsylvania State University United States
+67.4
+126
+Brown University United States
+66.9
+132
+Michigan State University United States
+66.4
+132
+Queen's University at Kingston Canada
+66.4
+136
+Simon Fraser University Canada
+66.3
