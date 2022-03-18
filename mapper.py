@@ -5,10 +5,9 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import plotly.express as px
 import pandas as pd
-file = open(r"C:\Users\hiidk\Projects\text scraping\info.txt","r+")
+file = open(r"<path here>","r+")
 lines = []
 lines = file.readlines()
-count = 0
 latlong = {}
 latlong["Names"] = []
 latlong["Latitude"] = []
@@ -19,9 +18,9 @@ for x in range(1,122,3):
     conn = http.client.HTTPConnection('api.positionstack.com')
 
     params = urllib.parse.urlencode({
-        'access_key': '7768124fc935c2275a68100f90229746',
+        'access_key': '<Key here>',
         'query': f'{name}',
-        'region': f'{name}',
+        'region': f'{name}, North America',
         'limit': 1,
         })
 
@@ -34,5 +33,12 @@ for x in range(1,122,3):
     latlong["Latitude"].append(fin['data'][0]['latitude'])
     latlong["Longitude"].append(fin['data'][0]['longitude'])
 print(latlong)
-# df = pd.DataFrame(list(latlong.items()),columns = ['Name','Latitude','Longitude'])
-# print(df.head())
+df = pd.DataFrame(latlong)
+gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.Longitude, df.Latitude))
+print(gdf)
+
+world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+map = world[world.continent == 'North America'].plot(color='lightblue', edgecolor='black')
+gdf.plot(ax = map, color='red')
+
+plt.show()
